@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+<title>LANDING PAGE ZNS</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="style1.css">
+<style>
+html,body,h1,h2,h3,h4 {font-family:"Lato", sans-serif}
+.mySlides {display:none}
+.w3-tag, .fa {cursor:pointer}
+.w3-tag {height:15px;width:15px;padding:0;margin-top:6px}
+</style>
+<body>
+
+<!-- Links (sit on top) -->
+<section class="sec">
+    <header>
+        <a href="#"><img src="logo.png" class="logo"></a>
+        <div class="w3-col s3">
+            <a href="#" class="w3-button w3-block">Home</a>
+          </div>
+          <div class="w3-col s3">
+            <a href="#categories" class="w3-button w3-block">Categories</a>
+          </div>
+          <div class="w3-col s3">
+            <a href="#popular" class="w3-button w3-block">Popular</a>
+          </div>
+          <div class="w3-col s3">
+            <a href="#about" class="w3-button w3-block">About</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="content">
+        <div class="textBox">
+            <h2>The Best Children<br><span>Toys Ever</span></h2>
+            <p>Welcome to ZNS Planet Toys page– your #1 hotspot for brilliant toys,music , stationary utilities and more. We’re committed to giving you the plain best with an attention on most astounding quality, unwavering quality, low price and uniqueness.</p>
+        <a href="#readmore" class="readmore" id="readmore">READ MORE</a> 
+        
+        </div>
+        <div class="imgBox">
+            <img src="toys.png" class="toys">
+        </div>
+    </div>
+    <ul class="thumb">
+        <li><img src="toys1.png" onclick="imgSlider('toys1.png');changeBgColor('#ffb3b3')"></li>
+        <li><img src="toys2.png" onclick="imgSlider('toys2.png');changeBgColor('#e60c2c')"></li>
+        <li><img src="toys3.png" onclick="imgSlider('toys3.png');changeBgColor('#1e1e1e')"></li>
+    </ul>
+</section>
+<script type="text/javascript">
+    function imgSlider(anything){
+        document.querySelector('.toys').src = anything;
+    }
+    function changeBgColor(color){
+        const sec = document.querySelector('.sec');
+        sec.style.background = color;
+    }
+        
+   
+</script>
+</body>
+
+  
+  <!-- Grid -->
+  <div class="readmore" id= "readmore">
+    <div class="w3-center w3-padding-64">
+      <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16 ">What We Offer</span>
+    </div>
+    <div class="w3-col l3 m6 w3-pale-yellow w3-container w3-padding-16">
+      <h3>Design</h3>
+      <p>ZNS Planet toys have a various designs for many types of toys.</p>
+    </div>
+
+    <div class="w3-col l3 m6 w3-light-gray w3-container w3-padding-16">
+      <h3>Branding</h3>
+      <p>We are ready to assist you to find your favourite toys.</p>
+    </div>
+
+    <div class="w3-col l3 m6 w3-pale-yellow w3-container w3-padding-16">
+      <h3>Consultation</h3>
+      <p>We provide you with the best consultation about toys that match with your budget.</p>
+    </div>
+
+    <div class="w3-col l3 m6 w3-light-gray w3-container w3-padding-16">
+      <h3>Promises</h3>
+      <p>ZNS always keep the promise to do the best for our customers. </p>
+    </div>
+  </div>
+
+  <!-- Grid -->
+  <div class="w3-row-padding" id="categories">
+    <div class="w3-center w3-padding-64">
+      <h3>CATEGORIES</h3>
+      <p>Find toys that you really like, we here for you.</p>
+    </div>
+
+    <div class="w3-third w3-margin-bottom">
+        <ul class="w3-ul w3-border w3-center w3-hover-shadow">
+        <li class="w3-dark-grey w3-xlarge w3-padding-32">Infant Toys</li>
+        <li class="w3-padding-16"><b>Bath</b> under 3 years</li>
+        <li class="w3-padding-16"><b>Electronic learning</b>3 years above</li>
+        <li class="w3-padding-16"><b>Jumpers and Walkers</b></li>
+        <li class="w3-padding-16"><b>Rattles,Toy Pacifiers & Toy Teethers</li>
+        <li class="w3-padding-16"> <b>Play Gyms, Mats and Nests</li>
+      </ul>
+    </div>
+
+    <div class="w3-third w3-margin-bottom">
+      <ul class="w3-ul w3-border w3-center w3-hover-shadow">
+        <li class="w3-dark-grey w3-xlarge w3-padding-32">Art and Crafts</li>
+        <li class="w3-padding-16"><b>Chalk, Crayons, Markers Paints and Pencils</li>
+        <li class="w3-padding-16"><b>Reusable Compounds (e.g., Clay, Dough, Sand, etc.)</li>
+        <li class="w3-padding-16"><b>Design Kits and Supplies – Reusable</li>
+        <li class="w3-padding-16"><b>Design Kits and Supplies – Single Use</li>
+        <li class="w3-padding-16"> <b>Colouring, Drawing and Painting set</li>
+      </ul>
+    </div>
+
+    <div class="w3-third w3-margin-bottom">
+      <ul class="w3-ul w3-border w3-center w3-hover-shadow">
+        <li class="w3-teal w3-xlarge w3-padding-32">Outdoor games</li>
+        <li class="w3-padding-16"><b>Banners, Kites and Windsocks</li>
+        <li class="w3-padding-16"><b>Bubble Solution and Playsets</li>
+        <li class="w3-padding-16"><b>Playground Equipment</li>
+        <li class="w3-padding-16"><b>Pools, Water and Sand Toys and Accessories</li>
+        <li class="w3-padding-16"> <b>Water and Other Blasters</li>
+
+      </ul>
+    </div>
+  </div>
+
+  <!-- Grid -->
+  <div class="w3-row-padding" id="popular">
+    <div class="w3-center w3-padding-64">
+      <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16 w3-cursive">POPULAR</span>
+    </div>
+
+    <div class="w3-third w3-margin-bottom">
+      <div class="w3-card-4">
+        <img src="toys.png" alt="John" style="width:85%">
+        <div class="w3-container">
+          <h3>Stuffed toys</h3>
+          <p>A stuffed toy is a toy doll with an outer fabric sewn from a textile and stuffed with flexible material.They are known by many names such as plush toys, plushies, stuffed animals and stuffies.They may also be called soft toys or cuddly toys.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-third w3-margin-bottom">
+        <div class="w3-card-4">
+          <img src="lego.png" alt="John" style="width:85%">
+          <div class="w3-container">
+            <h3>Lego</h3>
+            <p>Lego is a line of plastic construction toys that are manufactured by The Lego Group. Lego pieces can be assembled and connected in many ways to construct objects, including vehicles and working robots.</p>
+            
+          </div>
+        </div>
+      </div>
+
+    <div class="w3-third w3-margin-bottom">
+      <div class="w3-card-4">
+        <img src="toys3.png" alt="Jane" style="width:85%">
+        <div class="w3-container">
+          <h3>Toy blocks</h3>
+          <p>Toy blocks (also building bricks, building blocks, or simply blocks) are wooden, plastic, or foam pieces of various shapes and colors that are used as construction toys.Sometimes, toy blocks depict letters of the alphabet.</p>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- About Section -->
+<div class="w3-row w3-padding-64" id="about">
+    <div class="w3-col m6 w3-padding-large w3-hide-small">
+        <img src="encikzamri.jpeg" class="w3-circle w3-image " alt="Table Setting" width="600" height="750">
+    </div>
+
+    <div class="w3-col m6 w3-padding-large">
+      <h1 class="w3-center">About ZNS PLANET TOYS</h1><br>
+      <h5 class="w3-center">Established since 2016</h5>
+      <p class="w3-large">This store is owned by Mr Zamri bin Mahmud. We are the toy specialists. Our mission is to enrich families and provide "A Smarter Way to Play" by inspiring creativity and sparking curiosity. We design and curate world-class toys and games, while providing an extraordinary customer experience. Whether you're shopping for Christmas, Hanukkah, or a special birthday, we have the toys and games that will make a difference in a child's life.</p>
+    </div>
+  </div>
+ 
+  
+
+
+<!-- Footer -->
+
+<footer class="w3-container w3-padding-32 w3-light-grey w3-center w3-cursive">
+  <div class="w3-xlarge w3-section">
+    <p>GET IN TOUCH</p>
+    <h4>ADDRESS: 2013, LORONG RIA A/7, Taman Ria, 09400 Padang Serai, Kedah</h4>
+    <h4>CONTACT NO.:  016-456 6144</h4>
+    <a href="#" class="w3-button w3-black w3-margin"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  </div>
+</footer>
+
+
+<script>
+// Slideshow
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demodots");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length} ;
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" w3-white", "");
+  }
+  x[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " w3-black";
+}
+</script>
+
+</body>
+</html>
